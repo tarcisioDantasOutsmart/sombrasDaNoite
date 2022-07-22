@@ -1,0 +1,26 @@
+#Propriedades da aplicação Spring Boot
+spring:
+  main:
+    banner-mode: 'console'
+  http:
+    encoding:
+      charset: "@project.build.sourceEnconding@"
+  application:
+    name: "@projetc.name"
+    version: "@projetct.version@"
+    description: "@project.description"
+    
+#Dados exibidos no endpoint "info" do Actuator
+info:
+  app:
+    groupId: "@project.groupId@"
+    artifactId: "@project.artifactId@"
+    version: "@project.version@"
+    java.version: "@java.version@"
+    
+#Porta do servidor
+
+server:
+  port: ${PORT:4040}
+  servlet:
+    context-path: /sombras_da_noite
